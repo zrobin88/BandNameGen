@@ -1,0 +1,114 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Band Name Generator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Creepster" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="screen" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body class="coolColor">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
+  <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="jumbotron jumbotron-fluid rounded bg-dark">
+            <div class="container">
+              <h1 class="display-4 creepster text-danger">BROOOOOTAL Death Metal Band Name Generator</h1>
+              <p class="lead creepster text-danger" id="paragraph">Is your band name not BROOOOOOTAL enough? This app will reach into the darkest depths of hell to generate the must BROOOOOOTAL name ever!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="row">
+      <div class="col-md-12" id="buttons-view">
+        <button id="four-words">Generate a Four Word Band Name</button>
+        <button id="two-words">Do it Again!</button>
+        <button id="clear">Clear</button>
+      </div>
+    </div>
+
+
+    <div class="jumbotron jumbotron-fluid creepster bg-dark text-danger" id="results">
+      <div class="container">
+        <h1 class="display-4"></h1>
+        <p class="lead"></p>
+      </div>
+    </div>
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+  <script type="text/javascript">
+
+    let audio = new Audio("speed-metal.mp3");
+    
+
+    let nameArrayFour = [["Evil ", "Bloody ","Scrotal", "Bludgeoned ", "Mutilated ", "Dismembered ", "Fecal ", "Black ","Sodomized ", "Gory ", "Gruesome ", "Dark "], ["Corpse ", "Evisceration", "Butcher ", "Strangling ", "Hammer ", "Blood ", "Guts ", "Puke ", "Fucker ", "Mutliator ", "Murder ", "Behemoth ", "Beast "], ["Slashing ", "Stabbing ", "Violating ", "Sacrifice ", "Immolation ","Torture ", "Rape ", "Decapitation ", "Killing", "Anal Blaster ", "Cannibal "], ]
+
+    let twoArr = [["Evil ", "Blood ", "Bloody ","Scrotal ", "Bludgeoned ", "Mutilated ", "Dismembered ", "Fecal ", "Black ","Sodomized ", "Gory ", "Gruesome ", "Dark "], ["Corpse ", "Evisceration ", "Butcher ", "Strangling ", "Hammer ", "Blood ", "Guts ", "Chode ","Puke ", "Fucker ", "Mutliator ", "Murder ", "Behemoth ", "Beast "],["Corpse ", "Evisceration", "Butcher ", "Strangling ", "Hammer ", "Blood ", "Guts ", "Puke ", "Fucker ", "Mutliator ", "Murder ", "Behemoth ", "Beast "] ];
+
+    function clearBox(elementID) {
+      document.getElementById("results").innerHTML = "";
+    }
+
+
+    let fourBtn = $("#four-words").on("click", function (event) {
+      clearBox(); 
+      audio.play();
+      for (let i = 0; i < nameArrayFour.length; i++) {
+        for (let j = 0; j < nameArrayFour[i].length; j++) {
+          let result = nameArrayFour[j][Math.floor(Math.random() * nameArrayFour[i].length)]
+          console.log(result);
+          $("#results").append(result)
+        }
+      }
+    });
+    let twoBtn = $("#two-words").on("click", function () {
+      clearBox(); 
+      audio.play();
+      for (let i = 0; i < twoArr.length; i++) {
+        for (let j = 0; j < twoArr[i].length; j++) {
+          let twoResult = twoArr[j][Math.floor(Math.random() * twoArr[j].length)]
+          console.log(twoResult);
+          $("#results").append(twoResult);
+        }
+      }
+
+
+    });
+
+
+    $("#clear").on("click", function () {
+      location.reload();
+    });
+
+
+
+
+
+
+
+
+  </script>
+</body>
+
+</html>

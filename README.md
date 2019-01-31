@@ -1,2 +1,2 @@
-# BandNameGen
-Metal Band Name Generator 
+# Band_Name_Gen
+band name generator 

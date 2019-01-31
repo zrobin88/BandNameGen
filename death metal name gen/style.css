@@ -1,0 +1,27 @@
+#results{
+    text-align: center;
+    text-emphasis: bold;
+    font-size: 60px; 
+
+}
+.coolColor{
+    background-image: linear-gradient(rgba(236, 8, 0, 0.918),rgb(0, 0, 0));
+ }
+ .rakkasFont{
+    font-family: 'Rakkas', cursive;
+ }
+ .charmFont{
+    font-family: 'Charm', cursive;
+ }
+ #buttons-view{
+     position: relative;
+     left: 20%;
+ }
+
+ .creepster{
+    font-family: 'Creepster', cursive;
+ }
+
+ .coolColor2{
+    background-image: linear-gradient(rgba(236, 8, 0, 0.918),rgb(0, 0, 0));
+ }
