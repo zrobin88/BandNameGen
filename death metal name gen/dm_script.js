@@ -1,7 +1,7 @@
 let audio = new Audio("speed-metal.mp3");
     
 
-    let twoWordNames = [["Immortal ", "Ancient ", "Brutal ", "Icy ", "Malevolant ", "Absolute ", "Black ", "Epic ", "Dark ", "Divine ", "Unholy ", "Catatonic ", "Sacreligious ", "Burning ", "Ritualistic ","Sacrificial ", "Killer ","Damned ","Condemned ","Death ",,"Rotting ","Embracing ","Eradicating ","Existential ","Perilous ", "Bloody ", "Hellish ", "Hated "],
+    let twoWordNames = [["Immortal ", "Ancient ", "Brutal ", "Icy ", "Malevolant ", "Absolute ", "Black ", "Epic ", "Dark ", "Divine ", "Unholy ", "Catatonic ", "Sacreligious ", "Burning ", "Ritualistic ","Sacrificial ", "Killer ","Damned ","Condemned ","Death ", "Rotting ","Embracing ","Eradicating ","Existential ","Perilous ", "Bloody ", "Hellish ", "Hated "],
      ["Dragons ", "Maruder ", "Blood ", "Vengeance ", "Brood ", "Scar ", "Witch ", "Lord ", "Guardians ", "Beast ","Fire ", "Kings ", "Wizard ", "Relic ", "Remnant ", "Abomination ", "Murder ", "Killer ", "Death ", "Flesh ", "Undead ", "Tooth ", "Grime ", "Hunt ", "Messiah ", "Power ", "Fear ", "Decay ", "Waste ", "Nemesis ", "Brutality ", "Anubis ", "Hounds ", "Hell ", "Riders ", "Autopsy ", "Inquisition ", "Lobotomy ", "Cannibals ","Dead ", "Silence ", "Illusion ","Legion ","Axe ", "Hatchet ", "Drill ", "Rage ","Violator ", "Redemption ","Guts "]];
 
    let oneWordNames = ["Immortal ","Malevolance ","Ted Bundy " , "Anubis ", "Hatchet ", "Hellhound ", "Redemmer ", "Inquisitor ", "Lobotomy ", "Nemesis ", "Martyr "];
